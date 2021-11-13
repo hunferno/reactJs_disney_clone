@@ -5,25 +5,31 @@ function Detail() {
   return (
     <Container>
       <Background>
-        <img src="https://cdn.vox-cdn.com/thumbor/wJ71E7nJ_4Wj0btm5seEnHNJ4Xk=/0x0:4096x2304/1200x800/filters:focal(1973x1175:2627x1829)/cdn.vox-cdn.com/uploads/chorus_image/image/60190709/BO_RGB_s120_22a_cs_pub.pub16.318.0.jpg" />
+        <img
+          src="https://cdn.vox-cdn.com/thumbor/wJ71E7nJ_4Wj0btm5seEnHNJ4Xk=/0x0:4096x2304/1200x800/filters:focal(1973x1175:2627x1829)/cdn.vox-cdn.com/uploads/chorus_image/image/60190709/BO_RGB_s120_22a_cs_pub.pub16.318.0.jpg"
+          alt=""
+        />
       </Background>
       <ImageTitle>
-        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EF737B93E2F2ABE27C74CBBEB322F18A421E7986129E9989587CEF2295B0447F/scale?width=1344&aspectRatio=1.78&format=png" />
+        <img
+          src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EF737B93E2F2ABE27C74CBBEB322F18A421E7986129E9989587CEF2295B0447F/scale?width=1344&aspectRatio=1.78&format=png"
+          alt=""
+        />
       </ImageTitle>
       <Controls>
         <PlayButton>
-          <img src="/images/play-icon-black.png" />
+          <img src="/images/play-icon-black.png" alt="" />
           <span>PLAY</span>
         </PlayButton>
         <TrailerButton>
-          <img src="/images/play-icon-white.png" />
+          <img src="/images/play-icon-white.png" alt="" />
           <span>TRAILER</span>
         </TrailerButton>
         <AddButton>
           <span>+</span>
         </AddButton>
         <GroupWatchButton>
-          <img src="/images/group-icon.png" />
+          <img src="/images/group-icon.png" alt="" />
         </GroupWatchButton>
       </Controls>
       <SubTitle>2018 · 7m · Family, Fantasy, Kids, Animation</SubTitle>
@@ -133,4 +139,5 @@ const Description = styled.div`
   font-size: 20px;
   line-height: 1.4;
   margin-top: 16px;
+  max-width: 760px;
 `;

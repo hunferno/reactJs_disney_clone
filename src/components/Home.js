@@ -1,10 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import ImgSlider from "./ImgSlider";
 import Movies from "./Movies";
 import Viewers from "./Viewers";
 
+import { db } from "../firebase";
+import { collection, getDocs } from "@firebase/firestore";
+
 function Home() {
+  const moviesCollectionFromDB = collection(db, "movies");
+
+  useEffect(() => {
+    const getMoviesFromDB = async () => {
+      try {
+        const dataFromMoviesCollect = await getDocs(moviesCollectionFromDB);
+        console.log(dataFromMoviesCollect);
+      } catch (error) {
+        alert(error.message);
+      }
+    };
+
+    getMoviesFromDB();
+  });
+
   return (
     <Container>
       <ImgSlider />
